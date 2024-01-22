@@ -457,7 +457,7 @@ section .button button:hover {
 .contact .boxes .box .icon {
   height: 50px;
   width: 50px;
-  background: hsl(224deg 94.37% 82.39%);
+  background: #4070f4;
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
