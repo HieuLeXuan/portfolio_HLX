@@ -1,225 +1,242 @@
 <!DOCTYPE html>
-<!-- Website - www.codingnepalweb.com -->
-<html lang="en" dir="ltr">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/vite.svg"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Responsive Portfolio Website HTML CSS| CodingNepal</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Fontawesome CDN Link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
+    <!-- Fontawesome cdn icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
 
-<body>
-  <!-- Move to up button -->
-  <div class="scroll-button">
-    <a href="#home"><i class="fas fa-arrow-up"></i></a>
-  </div>
-  <!-- navgaition menu -->
-  <nav>
-    <div class="navbar">
-      <div class="logo"><a href="#">Portfolio.</a></div>
-      <ul class="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#services">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <div class="cancel-btn">
-          <i class="fas fa-times"></i>
-        </div>
-      </ul>
-      <!-- <div class="media-icons">
-        <a href="#"><i class="fab fa-google"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-      </div> -->
+    <!-- Custom Css -->
+    <link
+      rel="stylesheet"
+      href="./public/scss/main.scss"
+    />
+    <title>HieuLeXuan Portfolio</title>
+  </head>
+  <body>
+    <!-- Move to up button -->
+    <div class="scroll-button">
+      <a href="#home"><i class="fas fa-arrow-up"></i></a>
     </div>
-    <div class="menu-btn">
-      <i class="fas fa-bars"></i>
-    </div>
-  </nav>
-
-  <!-- Home Section Start -->
-  <section class="home" id="home">
-    <div class="home-content">
-      <div class="text">
-        <div class="text-one">Hi there, I'm Hieu</div>
-        <!-- <div class="text-two"></div> -->
-        <div class="text-three">I'm a Full Stack Developer</div>
-        <div class="text-four">From Viet Nam.</div>
+    <!-- Navgaition menu -->
+    <nav>
+      <div class="navbar">
+        <div class="logo"><a href="#">HieuLeXuan</a></div>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </ul>
       </div>
-      <!-- <div class="button">
-        <button>Hire Me</button>
-      </div> -->
-    </div>
-  </section>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
 
-  <!-- About Section Start -->
-  <section class="about" id="about">
-    <div class="content">
-      <div class="title"><span>About Me</span></div>
-      <div class="about-details">
-        <div class="left">
-          <img src="images/background2.jpg" alt="" />
+    <!-- Home Section Start -->
+    <section
+      class="home"
+      id="home"
+    >
+      <div class="home-content">
+        <div class="text">
+          <div class="text-one">Hi there, I'm Hieu</div>
+          <div class="text-three">I'm a Full Stack Developer</div>
+          <div class="text-four">From Viet Nam.</div>
         </div>
-        <div class="right">
-          <div class="topic">Coding Is My Passion</div>
-          <p>
-            As a passionate self-taught web developer hailing from Vietnam, my journey in software development is fueled
-            by the excitement of conceptualizing ideas and transforming them into reality through sophisticated
-            interfaces. I approach each project with meticulous attention, ensuring a seamless blend of user experience,
-            robust architecture, and impeccable code quality. My commitment extends beyond merely writing code; it
-            encompasses the art of crafting elegant and user-friendly solutions that resonate with the end-users. This
-            unwavering dedication to excellence propels me to continuously enhance my skills and deliver web
-            applications that not only meet but exceed expectations.
-          </p>
-          <div class="button">
-            <button>Download CV</button>
+      </div>
+    </section>
+
+    <!-- About Section Start -->
+    <section
+      class="about"
+      id="about"
+    >
+      <div class="content">
+        <div class="title"><span>About Me</span></div>
+        <div class="about-details">
+          <div class="left">
+            <img
+              src="./images/background2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="right">
+            <div class="topic">Coding Is My Passion</div>
+            <p>
+              As a passionate self-taught web developer hailing from Vietnam, my
+              journey in software development is fueled by the excitement of
+              conceptualizing ideas and transforming them into reality through
+              sophisticated interfaces. I approach each project with meticulous
+              attention, ensuring a seamless blend of user experience, robust
+              architecture, and impeccable code quality. My commitment extends
+              beyond merely writing code; it encompasses the art of crafting
+              elegant and user-friendly solutions that resonate with the
+              end-users. This unwavering dedication to excellence propels me to
+              continuously enhance my skills and deliver web applications that
+              not only meet but exceed expectations.
+            </p>
+            <div class="button">
+              <button>Download CV</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- My Skill Section Start -->
-  <!-- Section Tag and Other Div will same where we need to put same CSS -->
-  <section class="skills" id="skills">
-    <div class="content">
-      <div class="title"><span>My Skills</span></div>
-      <div class="skills-details">
+    <!-- My Skill Section Start -->
+    <!-- Section Tag and Other Div will same where we need to put same CSS -->
+    <section
+      class="skills"
+      id="skills"
+    >
+      <div class="content">
+        <div class="title"><span>My Skills</span></div>
+        <div class="skills-details">
+          <div class="boxes">
+            <div class="box">
+              <div class="topic">HTML</div>
+              <div class="icon">
+                <img
+                  class="skill-image"
+                  src="./images/html.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="box">
+              <div class="topic">CSS</div>
+              <div class="icon">
+                <img
+                  class="skill-image"
+                  src="./images/css.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="box">
+              <div class="topic">JavScript</div>
+              <div class="icon">
+                <img
+                  class="skill-image"
+                  src="./images/js.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="box">
+              <div class="topic">ReactJS</div>
+              <div class="icon">
+                <img
+                  class="skill-image"
+                  src="./images/reactjs.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="box">
+              <div class="topic">NodeJS</div>
+              <div class="icon">
+                <img
+                  class="skill-image"
+                  src="./images/node.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me section Start -->
+    <section
+      class="contact"
+      id="contact"
+    >
+      <div class="content">
+        <div class="title">
+          <span>Contact Me</span>
+        </div>
         <div class="boxes">
           <div class="box">
-            <div class="topic">HTML</div>
             <div class="icon">
-              <img class="skill-image" src="./images/html.svg" alt="">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="text">
+              <label>Address</label>
+              <p>Ho Chi Minh City</p>
             </div>
           </div>
           <div class="box">
-            <div class="topic">CSS</div>
             <div class="icon">
-              <img class="skill-image" src="./images/css.svg" alt="">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="text">
+              <label>Contact Number</label>
+              <p>+84 966055919</p>
             </div>
           </div>
           <div class="box">
-            <div class="topic">JavScript</div>
             <div class="icon">
-              <img class="skill-image" src="./images/js.svg" alt="">
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
+            <div class="text">
+              <label>Email Address</label>
+              <p>hieulexuan629@gmail.com</p>
             </div>
           </div>
           <div class="box">
-            <div class="topic">ReactJS</div>
             <div class="icon">
-              <img class="skill-image" src="./images/reactjs.svg" alt="">
+              <i class="fa-brands fa-linkedin"></i>
             </div>
-          </div>
-          <div class="box">
-            <div class="topic">NodeJS</div>
-            <div class="icon">
-              <img class="skill-image" src="./images/node.svg" alt="">
+            <div class="text">
+              <label>LinkedIn</label>
+              <p>
+                <a
+                  href="https://www.linkedin.com/in/hieule2906/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  hieule2906
+                </a>
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- My Services Section Start -->
-  <section class="services" id="services">
-    <div class="content">
-      <div class="title"><span>My Projects</span></div>
-      <div class="boxes">
-        <!-- <div class="box">
-          <div class="icon">
-            <i class="fas fa-desktop"></i>
-          </div>
-          <div class="topic">Web Devlopment</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem
-            eligendi?</p>
-        </div>
-        <div class="box">
-          <div class="icon">
-            <i class="fas fa-paint-brush"></i>
-          </div>
-          <div class="topic">Graphic Design</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem
-            eligendi?</p>
-        </div>
-        <div class="box">
-          <div class="icon">
-            <i class="fas fa-chart-line"></i>
-          </div>
-          <div class="topic">Digital Marketing</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem
-            eligendi?</p>
-        </div>
-        <div class="box">
-          <div class="icon">
-            <i class="fab fa-android"></i>
-          </div>
-          <div class="topic">Icon Design</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem
-            eligendi?</p>
-        </div>
-        <div class="box">
-          <div class="icon">
-            <i class="fas fa-camera-retro"></i>
-          </div>
-          <div class="topic">Photography</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem
-            eligendi?</p>
-        </div>
-        <div class="box">
-          <div class="icon">
-            <i class="fas fa-tablet-alt"></i>
-          </div>
-          <div class="topic">Apps Devlopment</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem
-            eligendi?</p>
-        </div> -->
+    <!-- Footer Section Start -->
+    <footer>
+      <div class="text">
+        <span>
+          Created By
+          <a href="#">HieuLeXuan</a>
+          | &#169; 2021
+        </span>
       </div>
-    </div>
-  </section>
-
-  <!-- Contact Me section Start -->
-  <section class="contact" id="contact">
-    <div class="content">
-      <div class="title"><span>Contact Me</span></div>
-      <div class="boxes">
-        <div class="box">
-          <a href="#">
-            <div class="icon">
-              <i class="fab fa-google"></i>
-            </div>
-          </a>
-        </div>
-        <div class="box">
-          <a href="https://github.com/HieuLeXuan">
-            <div class="icon">
-              <i class="fab fa-github"></i>
-            </div>
-          </a>
-        </div>
-        <div class="box">
-          <a href="https://www.linkedin.com/in/hieule2906/">
-            <div class="icon">
-              <i class="fab fa-linkedin"></i>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer Section Start -->
-  <footer>
-    <div class="text">
-      <span>Created By <a href="#">HieuLeXuan</a> | &#169; 2021</span>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-
+    </footer>
+    <script
+      type="module"
+      src="/main.js"
+    ></script>
+  </body>
 </html>
