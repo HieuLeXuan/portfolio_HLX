@@ -18,6 +18,22 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
 
+    <!-- Google font -->
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Custom Css -->
     <link
       rel="stylesheet"
@@ -30,7 +46,8 @@
     <div class="scroll-button">
       <a href="#home"><i class="fas fa-arrow-up"></i></a>
     </div>
-    <!-- Navgaition menu -->
+
+    <!-- Navigation menu -->
     <nav>
       <div class="navbar">
         <div class="logo"><a href="#">HieuLeXuan</a></div>
@@ -38,16 +55,12 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#services">Projects</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-          <div class="cancel-btn">
-            <i class="fas fa-times"></i>
-          </div>
+          <div class="cancel-btn"><i class="fas fa-times"></i></div>
         </ul>
       </div>
-      <div class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </div>
+      <div class="menu-btn"><i class="fas fa-bars"></i></div>
     </nav>
 
     <!-- Home Section Start -->
@@ -75,7 +88,7 @@
           <div class="left">
             <img
               src="./images/background2.jpg"
-              alt=""
+              alt="About Image"
             />
           </div>
           <div class="right">
@@ -101,8 +114,7 @@
       </div>
     </section>
 
-    <!-- My Skill Section Start -->
-    <!-- Section Tag and Other Div will same where we need to put same CSS -->
+    <!-- Skills Section Start -->
     <section
       class="skills"
       id="skills"
@@ -117,7 +129,7 @@
                 <img
                   class="skill-image"
                   src="./images/html.svg"
-                  alt=""
+                  alt="HTML"
                 />
               </div>
             </div>
@@ -127,37 +139,37 @@
                 <img
                   class="skill-image"
                   src="./images/css.svg"
-                  alt=""
+                  alt="CSS"
                 />
               </div>
             </div>
             <div class="box">
-              <div class="topic">JavScript</div>
+              <div class="topic">JavaScript</div>
               <div class="icon">
                 <img
                   class="skill-image"
-                  src="./images/js.svg"
-                  alt=""
+                  src="https://seeklogo.com/images/J/javascript-js-logo-2949701702-seeklogo.com.png"
+                  alt="JavaScript"
                 />
               </div>
             </div>
             <div class="box">
-              <div class="topic">ReactJS</div>
+              <div class="topic">TypeScript</div>
               <div class="icon">
                 <img
                   class="skill-image"
-                  src="./images/reactjs.svg"
-                  alt=""
+                  src="https://seeklogo.com/images/T/typescript-logo-B29A3F462D-seeklogo.com.png"
+                  alt="TypeScript"
                 />
               </div>
             </div>
             <div class="box">
-              <div class="topic">NodeJS</div>
+              <div class="topic">Angular</div>
               <div class="icon">
                 <img
                   class="skill-image"
-                  src="./images/node.svg"
-                  alt=""
+                  src="https://seeklogo.com/images/A/angular-icon-logo-5FC0C40EAC-seeklogo.com.png"
+                  alt="Angular"
                 />
               </div>
             </div>
@@ -166,7 +178,90 @@
       </div>
     </section>
 
-    <!-- Contact Me section Start -->
+    <!-- Projects Section Start -->
+    <section
+      class="project"
+      id="projects"
+    >
+      <div class="project-container">
+        <div class="title">
+          <span>Side Project</span>
+        </div>
+        <div class="project-gallery">
+          <div
+            class="project-item"
+            style="background-image: url(images/side-project-1.png)"
+          >
+            <div class="overlay"></div>
+            <div class="project-details">
+              <h3>
+                <a
+                  target="_blank"
+                  href="https://qpi.kr/"
+                >
+                  QPI - 소개팅 서비스 소개 페이지 개발
+                </a>
+              </h3>
+              <span>
+                UI/UX 디자인부터 웹 호스팅까지 전체 영역을 담당하였습니다.
+              </span>
+            </div>
+          </div>
+          <div
+            class="project-item"
+            style="background-image: url(images/work-2.jpg)"
+          >
+            <div class="overlay"></div>
+            <div class="project-details">
+              <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+              <span>Web Design</span>
+            </div>
+          </div>
+          <div
+            class="project-item"
+            style="background-image: url(images/work-3.jpg)"
+          >
+            <div class="overlay"></div>
+            <div class="project-details">
+              <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+              <span>Web Design</span>
+            </div>
+          </div>
+          <div
+            class="project-item"
+            style="background-image: url(images/work-4.jpg)"
+          >
+            <div class="overlay"></div>
+            <div class="project-details">
+              <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+              <span>Web Design</span>
+            </div>
+          </div>
+          <div
+            class="project-item"
+            style="background-image: url(images/work-5.jpg)"
+          >
+            <div class="overlay"></div>
+            <div class="project-details">
+              <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+              <span>Web Design</span>
+            </div>
+          </div>
+          <div
+            class="project-item"
+            style="background-image: url(images/work-6.jpg)"
+          >
+            <div class="overlay"></div>
+            <div class="project-details">
+              <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+              <span>Web Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section Start -->
     <section
       class="contact"
       id="contact"
@@ -177,36 +272,28 @@
         </div>
         <div class="boxes">
           <div class="box">
-            <div class="icon">
-              <i class="fa-solid fa-location-dot"></i>
-            </div>
+            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
             <div class="text">
               <label>Address</label>
               <p>Ho Chi Minh City</p>
             </div>
           </div>
           <div class="box">
-            <div class="icon">
-              <i class="fa-solid fa-phone"></i>
-            </div>
+            <div class="icon"><i class="fa-solid fa-phone"></i></div>
             <div class="text">
               <label>Contact Number</label>
               <p>+84 966055919</p>
             </div>
           </div>
           <div class="box">
-            <div class="icon">
-              <i class="fa-solid fa-paper-plane"></i>
-            </div>
+            <div class="icon"><i class="fa-solid fa-paper-plane"></i></div>
             <div class="text">
               <label>Email Address</label>
               <p>hieulexuan629@gmail.com</p>
             </div>
           </div>
           <div class="box">
-            <div class="icon">
-              <i class="fa-brands fa-linkedin"></i>
-            </div>
+            <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
             <div class="text">
               <label>LinkedIn</label>
               <p>
@@ -227,13 +314,10 @@
     <!-- Footer Section Start -->
     <footer>
       <div class="text">
-        <span>
-          Created By
-          <a href="#">HieuLeXuan</a>
-          | &#169; 2021
-        </span>
+        <span>Created By HieuLeXuan | &#169; 2021</span>
       </div>
     </footer>
+
     <script
       type="module"
       src="/main.js"
