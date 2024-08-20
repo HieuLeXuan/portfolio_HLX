@@ -1,0 +1,550 @@
+@import '_base';
+@import '_mixins';
+@import '_variables';
+@import '_external-links.scss';
+
+/* Reset and Scrollbar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6e93f7;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  &:hover {
+    background: $primary-color;
+  }
+}
+
+/* Navbar Styling */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: $font-main;
+
+  &.sticky {
+    @include flexbox(flex-start, center, row, nowrap);
+    background: $white-color;
+    padding: 13px 0;
+    box-shadow: $shadow-color 0px 0px 10px 0px;
+    display: flex;
+    line-height: 28.8px;
+  }
+
+  .navbar {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+    .logo a {
+      font-weight: 500;
+      font-size: 35px;
+      color: $primary-color;
+    }
+
+    &.sticky .logo a {
+      color: $white-color;
+    }
+
+    .menu {
+      display: flex;
+      position: relative;
+
+      li {
+        list-style: none;
+        margin: 0 8px;
+      }
+
+      a {
+        font-size: 18px;
+        font-weight: 500;
+        color: $secondary-color;
+        padding: 6px 0;
+        transition: all 0.4s ease;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+
+      &.sticky a {
+        color: $white-color;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+
+    .media-icons a {
+      color: $primary-color;
+      font-size: 18px;
+      margin: 0 6px;
+
+      &.sticky {
+        color: $white-color;
+      }
+    }
+
+    .menu-btn,
+    .menu .cancel-btn {
+      position: absolute;
+      color: $white-color;
+      right: 30px;
+      top: 20px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: none;
+
+      &.sticky {
+        color: $white-color;
+      }
+    }
+
+    .menu .menu-btn {
+      color: $white-color;
+    }
+  }
+}
+
+/* Home Section */
+.home {
+  height: 100vh;
+  width: 100%;
+  background: url('../images/background.png') no-repeat center/cover fixed;
+  font-family: $font-main;
+
+  .home-content {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .text-one {
+      font-size: 25px;
+      color: $secondary-color;
+    }
+
+    .text-two {
+      color: $secondary-color;
+      font-size: 75px;
+      font-weight: 600;
+      margin-left: -3px;
+    }
+
+    .text-three {
+      font-size: 40px;
+      margin: 5px 0;
+      color: $primary-color;
+    }
+
+    .text-four {
+      font-size: 23px;
+      margin: 5px 0;
+      color: $secondary-color;
+    }
+
+    .button {
+      margin: 14px 0;
+
+      button {
+        outline: none;
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-size: 25px;
+        font-weight: 400;
+        background: $primary-color;
+        color: $white-color;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: all 0.4s ease;
+
+        &:hover {
+          border-color: $primary-color;
+          background-color: $white-color;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+/* Section Styles */
+section {
+  padding-top: 40px;
+
+  .content {
+    width: 80%;
+    margin: 40px auto;
+    font-family: $font-alt;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    span {
+      color: $secondary-color;
+      font-size: 30px;
+      font-weight: 600;
+      position: relative;
+      padding-bottom: 8px;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: $primary-color;
+        left: 0;
+        bottom: 0;
+      }
+
+      &::after {
+        bottom: -7px;
+        width: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  .topic {
+    color: $secondary-color;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .button {
+    margin: 16px 0;
+
+    button {
+      outline: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 25px;
+      font-weight: 400;
+      background: $primary-color;
+      color: $white-color;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: all 0.4s ease;
+
+      &:hover {
+        border-color: $primary-color;
+        background-color: $white-color;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+/* About Section */
+.about {
+  .about-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $font-alt;
+
+    .left {
+      width: 45%;
+
+      img {
+        height: 400px;
+        width: 400px;
+        object-fit: cover;
+        border-radius: 12px;
+      }
+    }
+
+    .right {
+      width: 55%;
+      p {
+        text-align: justify;
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+/* Skills Section */
+.skills {
+  background: #f0f8ff;
+
+  .content {
+    padding: 40px 0;
+    font-family: $font-alt;
+  }
+
+  .skills-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .text {
+      width: 50%;
+    }
+
+    p {
+      color: $secondary-color;
+      text-align: justify;
+    }
+
+    .experience {
+      display: flex;
+      align-items: center;
+      margin: 0 10px;
+
+      .num {
+        color: $secondary-color;
+        font-size: 80px;
+      }
+
+      .exp {
+        color: $secondary-color;
+        margin-left: 20px;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0 6px;
+      }
+    }
+
+    .boxes {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .box {
+        width: calc(100% / 5 - 20px);
+        margin: 20px 0;
+        text-align: center;
+
+        .skill-image {
+          width: 100%;
+        }
+
+        .topic {
+          font-size: 20px;
+          color: $primary-color;
+        }
+
+        .per {
+          font-size: 60px;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+/* Side project */
+.project {
+  background: $background-color;
+  padding: 30px 0;
+  font-family: $font-alt;
+
+  .project-container {
+    @include flexbox(space-between, center, column, wrap);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .project-header {
+    text-align: center;
+    margin-bottom: 40px;
+
+    #title {
+      text-align: center;
+      font-size: 2rem;
+      color: $primary-color;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: $text-color;
+    }
+  }
+
+  .project-gallery {
+    @include flexbox(space-between, stretch, row, wrap);
+    gap: 20px;
+    width: 100%;
+
+    .project-item {
+      position: relative;
+      width: calc(33.333% - 20px);
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $overlay-color;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      .project-details {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: $text-color;
+        z-index: 2;
+
+        h3 {
+          margin: 0;
+          font-size: 1.25rem;
+        }
+
+        span {
+          display: block;
+          margin-top: 5px;
+          font-size: 0.875rem;
+        }
+
+        a {
+          color: $primary-color;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Contact Section */
+.contact {
+  background: $white-color;
+
+  .content {
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: $font-alt;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    color: $primary-color;
+    margin-bottom: 20px;
+  }
+
+  .boxes {
+    @include flexbox(space-between, stretch, row, wrap);
+    gap: 25px;
+
+    .box {
+      flex: 1;
+      @include flexbox(center, center, column, nowrap);
+      border-radius: 12px;
+      padding: 30px 20px;
+      background: $light-gray;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .icon {
+        height: 80px;
+        width: 80px;
+        background: $primary-color;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i {
+          font-size: 36px;
+          color: $white-color;
+        }
+      }
+
+      .text {
+        margin-top: 15px;
+        text-align: center;
+
+        label {
+          font-weight: bold;
+          font-size: 1.1rem;
+          color: $dark-color;
+        }
+
+        p {
+          font-size: 0.9rem;
+          color: $text-color;
+          margin-top: 8px;
+
+          a {
+            color: $primary-color;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Footer Section */
+footer {
+  @include flexbox(center, center);
+  padding: 20px 0 20px 0;
+  background-color: $secondary-color;
+  color: $white-color;
+  font-family: $font-alt;
+}
