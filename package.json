@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "sass public/scss/main.scss public/css/main.css"
   },
   "devDependencies": {
     "scss": "^0.2.4",
